@@ -2,7 +2,7 @@ import javax.swing.JFrame;
 
 public class Lab3Exercises {
 	public static void main(String[] args) {
-		JFrame myFrame = new JFrame("Diva L. Mockford Polanco");
+		JFrame myFrame = new JFrame("Diva L. Mockford ");
 		myFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
 
