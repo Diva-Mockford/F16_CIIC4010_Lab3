@@ -10,6 +10,8 @@ public class Lab3Exercises {
 		myFrame.setSize(200, 200);
 		//Found this method in the Java API that centers your screen depending on your main monitor.
 		myFrame.setLocationRelativeTo(null);
+		MyPanelClass myPanel = new MyPanelClass();
+		myFrame.getContentPane().add(myPanel);
 		myFrame.setVisible(true);
 	}
 }
