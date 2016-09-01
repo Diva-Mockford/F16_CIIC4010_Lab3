@@ -72,30 +72,55 @@ public class MyPanelClass extends JPanel {
 //                        g.setColor(Color.WHITE);
 //                        g.drawPolygon(p2);
                         
-                        //Puertorican Flag
                         
                         
+                        
+                     // Puerto Rican Flag
+                        
+                        
+                        //Rectangles
+                               g.setColor(Color.RED);
+                               g.fillRect(x1, y1 ,x2 + 1,(int)( y2*.2));
+                              
+                               g.setColor(Color.WHITE);
+                               g.fillRect(x1, y1 + (int)( y2*.2) , x2 + 1, (int)( y2*.4));
+                              
+                               g.setColor(Color.RED);
+                               g.fillRect(x1, (int)( y2*.4),x2 + 1, (int)( y2*.6));
+                              
+                               g.setColor(Color.WHITE);
+                               g.fillRect(x1, (int)( y2*.6),x2 + 1, (int)( y2*.8));
+                
+                               g.setColor(Color.RED);
+                               g.fillRect(x1, (int)( y2*.8) , x2 + 1, y2);
+                              
+                               //Triangle
+                               Polygon p = new Polygon();
+                               p.addPoint(x1, y1 );
+                               p.addPoint(x1 + x2/2, y1 + y2/2);
+                               p.addPoint(x1, y2);
+                               g.setColor(Color.BLUE);
+                               g.fillPolygon(p);
+                
+                              
+                              
+                               //Star
+                              
+                               Polygon tr = new Polygon();
+                               tr.addPoint(x1 + (int)(x2*.1), y1 + (int)(y2*.47));
+                               tr.addPoint(x1 + (int)(x2*.175), y1 +(int)(y2*.47));
+                               tr.addPoint(x1 + (int)(x2*.2), y1 + (int)(y2*.395));
+                               tr.addPoint(x1 + (int)(x2*.225), y1 + (int)(y2*.470));
+                               tr.addPoint(x1 + (int)(x2*.3), y1 + (int)(y2*.470));
+                               tr.addPoint(x1 + (int)(x2*.25), y1 + (int)(y2*.520));
+                               tr.addPoint(x1 + (int)(x2*.275), y1 + (int)(y2*.6));
+                               tr.addPoint(x1 + (int)(x2*.2), y1 + (int)(y2*.55));
+                               tr.addPoint(x1 + (int)(x2*.125), y1 + (int)(y2*.6));
+                               tr.addPoint(x1 + (int)(x2*.15), y1 + (int)(y2*.520));
+                               g.setColor(Color.WHITE);
+     
+                               g.fillPolygon(tr);
 
-                        //Star
-                        Polygon p2 = new Polygon();
-                      p2.addPoint(x1 + 25, y1 + 73);
-                      p2.addPoint(x1 + 41, y1 + 73);
-                      p2.addPoint(x1 + 47, y1 + 58);
-                      p2.addPoint(x1 + 53, y1 + 73);
-                      p2.addPoint(x1 + 69, y1 + 73);
-                      p2.addPoint(x1 + 56, y1 + 83);
-                      p2.addPoint(x1 + 61, y1 + 98);
-                      p2.addPoint(x1 + 47, y1 + 88);
-                      p2.addPoint(x1 + 34, y1 + 98);
-                      p2.addPoint(x1 + 38, y1 + 83);
-                      g.setColor(Color.WHITE);
-                      g.fillPolygon(p2);
-                      
-                      //White stripes
-                        g.setColor(Color.WHITE);
-                        g.fillRect(x1, y1+(height/2), width+ 1, (height/5));
-                        g.fillRect(x1, y1+ height/4, width+ 1, (height/5) );
-                        
                         
 
             }
